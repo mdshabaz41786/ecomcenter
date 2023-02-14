@@ -4,101 +4,109 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/397efffeb3.js" crossorigin="anonymous"></script>
-	<title></title>
-	<style>
-		*{
-			padding: 0;
-			margin: 0;
-			text-decoration: none;
-			list-style: none;
-			box-sizing: border-box;
-		}
-		nav {
-			background: purple;
-			height: 80px;
-			width: 100%;
-		}
-		label.logo {
-			margin-left: 20px;
-			font-size: 30px;
-			line-height: 80px;
-			color: white;
-			font-weight: bold;
-		}
-		nav ul {
-			float: right;
-			margin-right: 10px;
-		}
-		nav ul li {
-			display: inline-block;
-			line-height: 80px;
-			padding: 0 5px;
-		}
-		nav ul li a {
-			font-size: 20px;
-			color: white;
-		}
-		.checkbtn {
-			float: right;
-			margin-right: 20px;
-			color: white;
-			line-height: 80px;
-			display: none;
-		}
-		#check {
-			display: none;
-		}
-		.main {
-			margin: 50px;
-		}
-		.head {
-			text-align: center;
-		}
-		footer {
-			padding: 20px;
-			width: 100%;
-			height: 80px;
-			background: black;
-		}
-		.fot1 {
-			text-align: center;
-			color: white;
-			font-size: 20px;
-			font-weight: bold;
-		}
-		.head li {
-			padding: 50px;
-			display: inline-block;
-			width: 250px;
-			margin: 20px;
-			border: solid 1px;
-		}
-		@media (max-width :850px) {
-			label.logo  {
-				font-size: 30px;
-				margin-left: 10px;
-			}
-			ul {
-				position: fixed;
-				width: 100%;
-				height: 80vh;
-				top: 80px;
-				left: -100%;
-				text-align: center;
-				transition: .5s;
-				background: #BA55D3;
-			}s
-			nav ul li {
-				display: block;
-			}
-			.checkbtn {
-				display: block;
-			}
-			#check:checked ~ ul {
-				left: 0;
-			}
-		}
-	</style>
+	<title>Ecommunication Center</title>
+
+<style>
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body {
+	background: gray;
+}
+nav {
+	height: 80px;
+	width: 100%;
+	background: white;
+	}
+label.logo {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 80px;
+	margin-left: 20px;
+}
+nav ul {
+	float: right;
+	margin-right: 50px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	padding: 0 5px;
+}
+.checkbtn {
+	font-size: 24px;
+	float: right;
+	line-height: 80px;
+	display: none;
+}
+#check {
+	display: none;
+}
+.container {
+}
+.head {
+	background: red;
+}
+.body {
+}
+.body h1 {
+	text-align: center;
+	border: solid 2px white;
+	text-transform: uppercase;
+	color: white;
+	background: blue;
+}
+.tab {
+	align-items: center;
+	border: solid 2px white;
+	width: 200px;
+	height: 150px;
+	display: inline-block;
+	margin-left: 20px;
+}
+.tab p {
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+}
+@media(max-width : 850px) {
+
+	label.logo {
+		font-size: 20px;
+		font-weight: 700;
+	}
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 80vh;
+		top: 80px;
+		left: -100%;
+		background: hotpink;
+		text-align: center;
+		transition: .5s;
+		text-transform: uppercase;
+	}
+	nav ul li {
+	 display: block;
+	}
+	nav ul li a {
+		color: white;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.checkbtn {
+		display: block;
+		margin-right: 20px;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+
+</style>
 </head>
 <body>
 	<nav>
@@ -106,37 +114,79 @@
 		<label for="check" class="checkbtn">
 			<i class="fas fa-bars"></i>
 		</label>
-		<label class="logo">E-Communication Center </label>
-		<ul>
-			<li><a href="about.html">About</li>
-				<li><a href="about.html">Contact</li>
-
-		</ul>
-
-	</nav>
-	<br clear="all">
-
-	<div class="main">
+		<label class="logo">E-Communication Center</label>
 		
-		<div class="head">
-			<li><a href="DRA.html">DPR </a></li>
-			<li><a href="profitloss.html">Profit and Lose </a></li>
-			<li><a href="balanceshet.html">Balance Sheet </a></li>
+		<ul>
+			<li><a href="Login.html">Login</a></li>
+			<li><a href="Login.html">Contact Us</a></li>
+			<li><a href="Login.html">About Us</a></li>
+		</ul>
+	</nav>
 
-
-
+<dev class="container">
+	<div class="head">
+		<img src="E-COMMUNICATION.png" height="400px"; width="100%">
+	</div>
+	<div class="body">
+		<h1>Our Services </h1>
+		<br>
+		<div class="tab">
+			<img src="aadhar.png" height="150px"; width="100%px">
+			<p>Aadhar Card</p>
+		</div>
+		<div class="tab">
+			<img src="pan.png" height="150px"; width="100%">
+			<p>Pan Card</p>
+		</div>
+		<div class="tab">
+			<img src="ration.png" height="150px"; width="100%">
+			<p>Ration Card</p>
+		</div>
+		<div class="tab">
+			<img src="voter.jpg" height="150px"; width="100%">
+			<p>Voter ID Card</p>
+		</div>
+		<div class="tab">
+			<img src="passport.png" height="150px"; width="100%">
+			<p>Passport</p>
+		</div>
+		<div class="tab">
+			<img src="driving.jpg" height="150px"; width="100%">
+			<p>Driving Licence</p>
+		</div>
+		<div class="tab">
+			<img src="passport.png" height="150px"; width="100%">
+			<p>Passport</p>
+		</div>
+		<div class="tab">
+			<img src="pf.jpg" height="150px"; width="100%">
+			<p>Pf Claim</p>
+		</div>
+		<div class="tab">
+			<img src="gst.png" height="150px"; width="100%">
+			<p>Driving Licence</p>
+		</div>
+		<div class="tab">
+			<img src="train.png" height="150px"; width="100%">
+			<p>Train Ticket</p>
+		</div>
+		<div class="tab">
+			<img src="cesc.jpg" height="150px"; width="100%">
+			<p>CESC BILL PAYMENT</p>
+		</div>
+		<div class="tab">
+			<img src="agreement.jpg" height="150px"; width="100%">
+			<p>Rent Agreement</p>
+		</div>	
 		</div>
 
 	</div>
-	<br clear="all">
 
-	<footer>
-		<div class="fot1">
-			<p> All right reserved 2023</p>
-			<p> E-communication Center </p>
-			
-		</div>
-	</footer>
+
+
+
+
+</dev>
 
 </body>
 </html>
