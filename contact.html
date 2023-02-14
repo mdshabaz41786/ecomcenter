@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/397efffeb3.js" crossorigin="anonymous"></script>
+	<title>Ecommunication Center</title>
+
+<style>
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+body {
+	background: gray;
+}
+nav {
+	height: 80px;
+	width: 100%;
+	background: white;
+	}
+label.logo {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 80px;
+	margin-left: 20px;
+}
+nav ul {
+	float: right;
+	margin-right: 50px;
+}
+nav ul li {
+	display: inline-block;
+	line-height: 80px;
+	padding: 0 5px;
+}
+nav ul li  a {
+	width: 25px;
+	height: 25px;
+	padding: 10px;
+	border: solid 1px;
+	background: black;
+	color: white;
+}
+.checkbtn {
+	font-size: 24px;
+	float: right;
+	line-height: 80px;
+	display: none;
+}
+#check {
+	display: none;
+}
+.container {
+	display: flex;
+}
+.tab {
+	background: white;
+	width: 500px;
+	height: 300px;
+	border: solid 1px;
+	padding: 20px;
+	margin-top: 50px;
+	margin-left: 120px;
+	padding: 50px;
+	font-size: 24px;
+}
+.map {
+margin-left: 500px;
+width: 150px;
+height: 150px;
+
+	}
+
+
+@media(max-width : 850px) {
+
+	label.logo {
+		font-size: 20px;
+		font-weight: 700;
+	}
+	ul {
+		position: fixed;
+		width: 100%;
+		height: 80vh;
+		top: 80px;
+		left: -100%;
+		background: hotpink;
+		text-align: center;
+		transition: .5s;
+		text-transform: uppercase;
+	}
+	nav ul li {
+	 display: block;
+	}
+	nav ul li a {
+		color: white;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.checkbtn {
+		display: block;
+		margin-right: 20px;
+	}
+	#check:checked ~ ul {
+		left: 0;
+	}
+}
+@media(max-width : 770px) {
+	.container {
+		display: block;
+	}
+	.tab {
+		display: block;
+		width: 220px;
+		height: 150px;
+		margin-left: 50px;
+		font-size: 15px;
+		padding: 25px;
+	}
+	.map {
+		margin-left: 50px;
+	}
+
+}
+
+
+</style>
+</head>
+<body>
+	<nav>
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<label class="logo">E-Communication Center</label>
+		
+		<ul>
+			<li><a href="Login.html">Login</a></li>
+			<li><a href="Login.html">Contact Us</a></li>
+			<li><a href="Login.html">About Us</a></li>
+		</ul>
+	</nav>
+
+<dev class="container">
+	
+	<div class="tab">
+		<p>Phone : 9432884102 </p>
+		<p>Email : mail.ecomcenter@gmail.com </p>
+		
+	</div>
+	<div class="tab">
+		<p>Address: J-35/A FATEHPUR VILLAGE ROAD,West Bengal, KOLKATA - 700024</p>
+		
+	</div>
+	</dev>
+	<br>
+	<div class="map">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.9991381580508!2d88.28789031427311!3d22.541705039786304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0279a228e45801%3A0x99994187030cc032!2sJ%2F35%2FA%2C%20Azahar%20Molla%20Bagan%20Basti%2C%20Hari%20Babu%20Pally%20Basti%2C%20Garden%20Reach%2C%20Kolkata%2C%20West%20Bengal%20700024!5e0!3m2!1sen!2sin!4v1676380022272!5m2!1sen!2sin" width="600" height="450" style="border:0; width: 250px; height: 250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<br clear="all">
+<br>
+
+
+
+
+
+
+</body>
+</html>
